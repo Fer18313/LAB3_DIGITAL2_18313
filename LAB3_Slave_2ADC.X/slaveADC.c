@@ -37,7 +37,7 @@ uint8_t var0;
 uint8_t var1;
 uint8_t F1=0; 
 uint8_t F0; 
-
+uint8_t h;
 // FUNCTION PROTOTYPES
 void initCONFIG(void);
 
@@ -75,7 +75,8 @@ void __interrupt() isr(void) {
 // MAIN VOID
 void main(void) {
     initCONFIG(); 
-    while(1){     
+    while(1){ 
+        h++;
     }
     return;
 }

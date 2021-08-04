@@ -146,8 +146,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1495
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1495: extern volatile TRISBbits_t TRISBbits __attribute__((address(0x086)));
 [v _TRISBbits `VS54 ~T0 @X0 0 e@134 ]
-"109 slaveADC.c
-[; ;slaveADC.c: 109:     spiInit(SPI_SLAVE_SS_EN, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
+"110 slaveADC.c
+[; ;slaveADC.c: 110:     spiInit(SPI_SLAVE_SS_EN, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
 [c E1293 32 33 34 35 36 37 .. ]
 [n E1293 . SPI_MASTER_OSC_DIV4 SPI_MASTER_OSC_DIV16 SPI_MASTER_OSC_DIV64 SPI_MASTER_TMR2 SPI_SLAVE_SS_EN SPI_SLAVE_SS_DIS  ]
 [c E1301 0 128 .. ]
@@ -432,6 +432,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "39
 [; ;slaveADC.c: 39: uint8_t F0;
 [v _F0 `uc ~T0 @X0 1 e ]
+"40
+[; ;slaveADC.c: 40: uint8_t h;
+[v _h `uc ~T0 @X0 1 e ]
 [v $root$_isr `(v ~T0 @X0 0 e ]
 "45
 [; ;slaveADC.c: 45: void __attribute__((picinterrupt(("")))) isr(void) {
@@ -556,103 +559,106 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 150 ]
 {
 "79
-[; ;slaveADC.c: 79:     }
+[; ;slaveADC.c: 79:         h++;
+[e ++ _h -> -> 1 `i `uc ]
+"80
+[; ;slaveADC.c: 80:     }
 }
 [e :U 149 ]
 [e $U 150  ]
 [e :U 151 ]
-"80
-[; ;slaveADC.c: 80:     return;
-[e $UE 148  ]
 "81
-[; ;slaveADC.c: 81: }
+[; ;slaveADC.c: 81:     return;
+[e $UE 148  ]
+"82
+[; ;slaveADC.c: 82: }
 [e :UE 148 ]
 }
-"83
-[; ;slaveADC.c: 83: void initCONFIG(void){
+"84
+[; ;slaveADC.c: 84: void initCONFIG(void){
 [v _initCONFIG `(v ~T0 @X0 1 ef ]
 {
 [e :U _initCONFIG ]
 [f ]
-"84
-[; ;slaveADC.c: 84:     ANSELH = 0;
-[e = _ANSELH -> -> 0 `i `uc ]
 "85
-[; ;slaveADC.c: 85:     ANSEL = 0b00000011;
-[e = _ANSEL -> -> 3 `i `uc ]
+[; ;slaveADC.c: 85:     ANSELH = 0;
+[e = _ANSELH -> -> 0 `i `uc ]
 "86
-[; ;slaveADC.c: 86:     TRISA = 0b00001011;
-[e = _TRISA -> -> 11 `i `uc ]
+[; ;slaveADC.c: 86:     ANSEL = 0b00000011;
+[e = _ANSEL -> -> 3 `i `uc ]
 "87
-[; ;slaveADC.c: 87:     TRISB = 0b00001000;
-[e = _TRISB -> -> 8 `i `uc ]
+[; ;slaveADC.c: 87:     TRISA = 0b00001011;
+[e = _TRISA -> -> 11 `i `uc ]
 "88
-[; ;slaveADC.c: 88:     TRISC = 0b00011000;
-[e = _TRISC -> -> 24 `i `uc ]
+[; ;slaveADC.c: 88:     TRISB = 0b00001000;
+[e = _TRISB -> -> 8 `i `uc ]
 "89
-[; ;slaveADC.c: 89:     TRISD = 0;
-[e = _TRISD -> -> 0 `i `uc ]
+[; ;slaveADC.c: 89:     TRISC = 0b00011000;
+[e = _TRISC -> -> 24 `i `uc ]
 "90
-[; ;slaveADC.c: 90:     TRISE = 0;
-[e = _TRISE -> -> 0 `i `uc ]
+[; ;slaveADC.c: 90:     TRISD = 0;
+[e = _TRISD -> -> 0 `i `uc ]
 "91
-[; ;slaveADC.c: 91:     PORTA = 0;
-[e = _PORTA -> -> 0 `i `uc ]
+[; ;slaveADC.c: 91:     TRISE = 0;
+[e = _TRISE -> -> 0 `i `uc ]
 "92
-[; ;slaveADC.c: 92:     PORTC = 0;
-[e = _PORTC -> -> 0 `i `uc ]
+[; ;slaveADC.c: 92:     PORTA = 0;
+[e = _PORTA -> -> 0 `i `uc ]
 "93
-[; ;slaveADC.c: 93:     PORTD = 0;
-[e = _PORTD -> -> 0 `i `uc ]
+[; ;slaveADC.c: 93:     PORTC = 0;
+[e = _PORTC -> -> 0 `i `uc ]
 "94
-[; ;slaveADC.c: 94:     PORTE = 0;
-[e = _PORTE -> -> 0 `i `uc ]
+[; ;slaveADC.c: 94:     PORTD = 0;
+[e = _PORTD -> -> 0 `i `uc ]
 "95
-[; ;slaveADC.c: 95:     OSCCONbits.IRCF2 = 1;
-[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
+[; ;slaveADC.c: 95:     PORTE = 0;
+[e = _PORTE -> -> 0 `i `uc ]
 "96
-[; ;slaveADC.c: 96:     OSCCONbits.IRCF1 = 1;
-[e = . . _OSCCONbits 1 2 -> -> 1 `i `uc ]
+[; ;slaveADC.c: 96:     OSCCONbits.IRCF2 = 1;
+[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
 "97
-[; ;slaveADC.c: 97:     OSCCONbits.IRCF0 = 1;
-[e = . . _OSCCONbits 1 1 -> -> 1 `i `uc ]
+[; ;slaveADC.c: 97:     OSCCONbits.IRCF1 = 1;
+[e = . . _OSCCONbits 1 2 -> -> 1 `i `uc ]
 "98
-[; ;slaveADC.c: 98:     OSCCONbits.SCS = 1;
-[e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
+[; ;slaveADC.c: 98:     OSCCONbits.IRCF0 = 1;
+[e = . . _OSCCONbits 1 1 -> -> 1 `i `uc ]
 "99
-[; ;slaveADC.c: 99:     setupADC();
-[e ( _setupADC ..  ]
+[; ;slaveADC.c: 99:     OSCCONbits.SCS = 1;
+[e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
 "100
-[; ;slaveADC.c: 100:     INTCONbits.GIE = 1;
-[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+[; ;slaveADC.c: 100:     setupADC();
+[e ( _setupADC ..  ]
 "101
-[; ;slaveADC.c: 101:     INTCONbits.T0IE = 1;
-[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+[; ;slaveADC.c: 101:     INTCONbits.GIE = 1;
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
 "102
-[; ;slaveADC.c: 102:     INTCONbits.T0IF = 0;
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+[; ;slaveADC.c: 102:     INTCONbits.T0IE = 1;
+[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
 "103
-[; ;slaveADC.c: 103:     INTCONbits.PEIE = 1;
-[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
+[; ;slaveADC.c: 103:     INTCONbits.T0IF = 0;
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
 "104
-[; ;slaveADC.c: 104:     PIR1bits.SSPIF = 0;
-[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
+[; ;slaveADC.c: 104:     INTCONbits.PEIE = 1;
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
 "105
-[; ;slaveADC.c: 105:     PIE1bits.SSPIE = 1;
-[e = . . _PIE1bits 0 3 -> -> 1 `i `uc ]
+[; ;slaveADC.c: 105:     PIR1bits.SSPIF = 0;
+[e = . . _PIR1bits 0 3 -> -> 0 `i `uc ]
 "106
-[; ;slaveADC.c: 106:     TRISBbits.TRISB3 = 1;
-[e = . . _TRISBbits 0 3 -> -> 1 `i `uc ]
+[; ;slaveADC.c: 106:     PIE1bits.SSPIE = 1;
+[e = . . _PIE1bits 0 3 -> -> 1 `i `uc ]
 "107
-[; ;slaveADC.c: 107:     PIE1bits.ADIE = 1;
-[e = . . _PIE1bits 0 6 -> -> 1 `i `uc ]
+[; ;slaveADC.c: 107:     TRISBbits.TRISB3 = 1;
+[e = . . _TRISBbits 0 3 -> -> 1 `i `uc ]
 "108
-[; ;slaveADC.c: 108:     PIR1bits.ADIF = 0;
-[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
+[; ;slaveADC.c: 108:     PIE1bits.ADIE = 1;
+[e = . . _PIE1bits 0 6 -> -> 1 `i `uc ]
 "109
-[; ;slaveADC.c: 109:     spiInit(SPI_SLAVE_SS_EN, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
-[e ( _spiInit (4 , , , . `E1293 4 . `E1301 0 . `E1305 1 . `E1309 0 ]
+[; ;slaveADC.c: 109:     PIR1bits.ADIF = 0;
+[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
 "110
-[; ;slaveADC.c: 110: }
+[; ;slaveADC.c: 110:     spiInit(SPI_SLAVE_SS_EN, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
+[e ( _spiInit (4 , , , . `E1293 4 . `E1301 0 . `E1305 1 . `E1309 0 ]
+"111
+[; ;slaveADC.c: 111: }
 [e :UE 152 ]
 }

@@ -2701,7 +2701,7 @@ uint8_t var0;
 uint8_t var1;
 uint8_t F1=0;
 uint8_t F0;
-
+uint8_t h;
 
 void initCONFIG(void);
 
@@ -2740,6 +2740,7 @@ void __attribute__((picinterrupt(("")))) isr(void) {
 void main(void) {
     initCONFIG();
     while(1){
+        h++;
     }
     return;
 }
