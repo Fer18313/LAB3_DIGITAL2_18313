@@ -778,8 +778,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 129:             case 4:
 [e :U 156 ]
 "130
-[; ;main.c: 130:                 TXREG = 0b101101;
-[e = _TXREG -> -> 45 `i `uc ]
+[; ;main.c: 130:                 TXREG = 48;
+[e = _TXREG -> -> 48 `i `uc ]
 "131
 [; ;main.c: 131:                 FZERO = 5;
 [e = _FZERO -> -> 5 `i `c ]

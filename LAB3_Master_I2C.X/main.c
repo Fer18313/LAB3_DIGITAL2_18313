@@ -127,7 +127,7 @@ void __interrupt() isr(void){
                 FZERO = 4;
                 break;
             case 4:
-                TXREG = 0b101101;
+                TXREG = 48;
                 FZERO = 5;
                 break;
             case 5:
