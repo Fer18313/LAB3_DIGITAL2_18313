@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
-                                                                                               Wed Aug 04 11:58:24 2021
+                                                                                               Wed Aug 04 13:21:08 2021
 
 Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1 
      1                           	processor	16F887
@@ -1699,13 +1699,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1685  03EB  1518               	bsf	24,2	;volatile
   1686  03EC                     l1347:
   1687                           
-  1688                           ;main.c: 226:     BAUDCTLbits.BRG16 = 1;
+  1688                           ;main.c: 226:     BAUDCTLbits.BRG16 = 0;
   1689  03EC  1683               	bsf	3,5	;RP0=1, select bank3
   1690  03ED  1703               	bsf	3,6	;RP1=1, select bank3
-  1691  03EE  1587               	bsf	7,3	;volatile
+  1691  03EE  1187               	bcf	7,3	;volatile
   1692                           
-  1693                           ;main.c: 227:     SPBRG = 207;
-  1694  03EF  30CF               	movlw	207
+  1693                           ;main.c: 227:     SPBRG = 51;
+  1694  03EF  3033               	movlw	51
   1695  03F0  1683               	bsf	3,5	;RP0=1, select bank1
   1696  03F1  1303               	bcf	3,6	;RP1=0, select bank1
   1697  03F2  0099               	movwf	25	;volatile
@@ -3153,7 +3153,7 @@ EEDATA             100      0       0       0        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.32 build 20210201212658 
-Symbol Table                                                                                   Wed Aug 04 11:58:24 2021
+Symbol Table                                                                                   Wed Aug 04 13:21:08 2021
 
                       _c 0042           ___bmul@product 0022              _SSPSTATbits 0094  
                      _J0 0047                       l61 0449                       l62 044E  

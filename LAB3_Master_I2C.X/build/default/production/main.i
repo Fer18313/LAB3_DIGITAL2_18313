@@ -2874,8 +2874,8 @@ void initCONFIG(void){
     INTCONbits.T0IF = 0;
     TXSTAbits.SYNC = 0;
     TXSTAbits.BRGH = 1;
-    BAUDCTLbits.BRG16 = 1;
-    SPBRG = 207;
+    BAUDCTLbits.BRG16 = 0;
+    SPBRG = 51;
     SPBRGH = 0;
     RCSTAbits.SPEN = 1;
     RCSTAbits.RX9 = 0;

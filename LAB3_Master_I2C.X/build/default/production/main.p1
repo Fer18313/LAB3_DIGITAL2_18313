@@ -1146,11 +1146,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 225:     TXSTAbits.BRGH = 1;
 [e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
 "226
-[; ;main.c: 226:     BAUDCTLbits.BRG16 = 1;
-[e = . . _BAUDCTLbits 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 226:     BAUDCTLbits.BRG16 = 0;
+[e = . . _BAUDCTLbits 0 3 -> -> 0 `i `uc ]
 "227
-[; ;main.c: 227:     SPBRG = 207;
-[e = _SPBRG -> -> 207 `i `uc ]
+[; ;main.c: 227:     SPBRG = 51;
+[e = _SPBRG -> -> 51 `i `uc ]
 "228
 [; ;main.c: 228:     SPBRGH = 0;
 [e = _SPBRGH -> -> 0 `i `uc ]
