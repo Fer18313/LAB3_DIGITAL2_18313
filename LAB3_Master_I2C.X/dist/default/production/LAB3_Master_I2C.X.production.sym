@@ -60,9 +60,9 @@ __size_of_isr 0 0 ABS 0
 _dozen 3B 0 BANK0 1
 _unit_1_change 3E 0 BANK0 1
 _temp_read 7C 0 COMMON 1
+_TRISA0 428 0 ABS 0
 __Hfunctab 0 0 ENTRY 0
 __Lfunctab 0 0 ENTRY 0
-_TRISC2 43A 0 ABS 0
 _TRISC3 43B 0 ABS 0
 i1___bmul 467 0 CODE 0
 _TRISC5 43D 0 ABS 0
@@ -117,8 +117,8 @@ ___wmul@multiplicand 22 0 BANK0 1
 __end_of_spiInit 450 0 CODE 0
 _decathlon 44 0 BANK0 1
 _RCSTAbits 18 0 ABS 0
+_PORTAbits 5 0 ABS 0
 _TXSTAbits 98 0 ABS 0
-_PORTCbits 7 0 ABS 0
 _PORTDbits 8 0 ABS 0
 __Hstrings 0 0 ABS 0
 __Lstrings 0 0 ABS 0
@@ -239,7 +239,7 @@ cstackCOMMON 70 7D COMMON 70 1
 cstackBANK0 20 48 BANK0 20 1
 %locals
 dist/default/production\LAB3_Master_I2C.X.production.o
-C:\Users\FERNAN~1\AppData\Local\Temp\xcAsdk4.s
+C:\Users\FERNAN~1\AppData\Local\Temp\xcAsde4.s
 1170 11 0 CODE 0
 1173 11 0 CODE 0
 1250 11 0 CODE 0

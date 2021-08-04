@@ -2714,7 +2714,7 @@ void main(void) {
     initCONFIG();
     initTMR0();
     while(1){
-       PORTCbits.RC2 = 0;
+       PORTAbits.RA0 = 0;
        _delay((unsigned long)((1)*(8000000/4000.0)));
 
        spiWrite(var);
@@ -2727,7 +2727,7 @@ void main(void) {
        var = 1;
        }
        _delay((unsigned long)((1)*(8000000/4000.0)));
-       PORTCbits.RC2 = 1;
+       PORTAbits.RA0 = 1;
        _delay((unsigned long)((250)*(8000000/4000.0)));
 
     if(c > 20){
@@ -2883,8 +2883,8 @@ void initCONFIG(void){
     RCSTAbits.RX9 = 0;
     RCSTAbits.CREN = 1;
     TXSTAbits.TXEN = 1;
-    TRISC2 = 0;
-    PORTCbits.RC2 = 1;
+    TRISA0 = 0;
+    PORTAbits.RA0 = 1;
     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
 }
 void initTMR0(){

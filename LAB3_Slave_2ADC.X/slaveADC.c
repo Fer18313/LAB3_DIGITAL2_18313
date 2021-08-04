@@ -28,7 +28,6 @@
 #include <stdint.h>
 #include "ADC.h"
 #include "SPI.h"
-#include "LCD8bits.h"
 
 
 
@@ -97,14 +96,7 @@ void initCONFIG(void){
     OSCCONbits.IRCF1 = 1;
     OSCCONbits.IRCF0 = 1;
     OSCCONbits.SCS = 1;
-    ADCON1bits.ADFM = 0;
-    ADCON1bits.VCFG0 = 0;
-    ADCON1bits.VCFG1 = 0; 
-    ADCON0bits.ADCS = 0b10;
-    ADCON0bits.CHS = 0;    
-    ADCON0bits.ADON = 1;
-    __delay_us(50); 
-    ADCON0bits.GO = 1;
+    setupADC();
     INTCONbits.GIE = 1;  
     INTCONbits.T0IE = 1;           
     INTCONbits.T0IF = 0; 

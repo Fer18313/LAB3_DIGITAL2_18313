@@ -2692,16 +2692,6 @@ unsigned spiDataReady();
 char spiRead();
 # 30 "slaveADC.c" 2
 
-# 1 "./LCD8bits.h" 1
-# 16 "./LCD8bits.h"
-void initLCD(void);
-void enableLCD(char x);
-void LCDsetup(char x);
-void wLCD (char x);
-void cursorLCD (char x, char y);
-void wsLCD (char *x);
-# 31 "slaveADC.c" 2
-
 
 
 
@@ -2770,14 +2760,7 @@ void initCONFIG(void){
     OSCCONbits.IRCF1 = 1;
     OSCCONbits.IRCF0 = 1;
     OSCCONbits.SCS = 1;
-    ADCON1bits.ADFM = 0;
-    ADCON1bits.VCFG0 = 0;
-    ADCON1bits.VCFG1 = 0;
-    ADCON0bits.ADCS = 0b10;
-    ADCON0bits.CHS = 0;
-    ADCON0bits.ADON = 1;
-    _delay((unsigned long)((50)*(8000000/4000000.0)));
-    ADCON0bits.GO = 1;
+    setupADC();
     INTCONbits.GIE = 1;
     INTCONbits.T0IE = 1;
     INTCONbits.T0IF = 0;
