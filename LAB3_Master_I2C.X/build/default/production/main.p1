@@ -27,10 +27,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "49
 [; ;./SPI.h: 49: char spiRead();
 [v _spiRead `(uc ~T0 @X0 0 e? ]
-"4541 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4541: extern volatile __bit TXIE __attribute__((address(0x464)));
-[v _TXIE `Vb ~T0 @X0 0 e@1124 ]
-"358
+"358 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 358:     struct {
 [s S12 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S12 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
@@ -44,6 +41,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "352
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 352: extern volatile unsigned char PORTD __attribute__((address(0x008)));
 [v _PORTD `Vuc ~T0 @X0 0 e@8 ]
+"4541
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4541: extern volatile __bit TXIE __attribute__((address(0x464)));
+[v _TXIE `Vb ~T0 @X0 0 e@1124 ]
 [t ~ __interrupt . k ]
 [t T1 __interrupt ]
 "465
@@ -61,6 +61,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "482
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 482: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
 [v _INTCONbits `VS15 ~T0 @X0 0 e@11 ]
+"4544
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4544: extern volatile __bit TXIF __attribute__((address(0x64)));
+[v _TXIF `Vb ~T0 @X0 0 e@100 ]
+"1133
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1133: extern volatile unsigned char TXREG __attribute__((address(0x019)));
+[v _TXREG `Vuc ~T0 @X0 0 e@25 ]
 "543
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 543:     struct {
 [s S19 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -78,12 +84,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "228
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 228: extern volatile unsigned char PORTB __attribute__((address(0x006)));
 [v _PORTB `Vuc ~T0 @X0 0 e@6 ]
-"4544
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4544: extern volatile __bit TXIF __attribute__((address(0x64)));
-[v _TXIF `Vb ~T0 @X0 0 e@100 ]
-"1133
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1133: extern volatile unsigned char TXREG __attribute__((address(0x019)));
-[v _TXREG `Vuc ~T0 @X0 0 e@25 ]
 "1868
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1868:     struct {
 [s S70 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 ]
@@ -191,8 +191,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "4400
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 4400: extern volatile __bit TRISA0 __attribute__((address(0x428)));
 [v _TRISA0 `Vb ~T0 @X0 0 e@1064 ]
-"237 main.c
-[; ;main.c: 237:     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
+"235 main.c
+[; ;main.c: 235:     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
 [c E1292 32 33 34 35 36 37 .. ]
 [n E1292 . SPI_MASTER_OSC_DIV4 SPI_MASTER_OSC_DIV16 SPI_MASTER_OSC_DIV64 SPI_MASTER_TMR2 SPI_SLAVE_SS_EN SPI_SLAVE_SS_DIS  ]
 [c E1300 0 128 .. ]
@@ -626,62 +626,62 @@ Version 4.0 HI-TECH Software Intermediate Code
 "80
 [; ;main.c: 80:        _delay((unsigned long)((250)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 250 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"81
+[; ;main.c: 81:     unit = var1 / 51;
+[e = _unit -> / -> _var1 `i -> 51 `i `uc ]
 "82
-[; ;main.c: 82:     if(c > 20){
-[e $ ! > -> _c `i -> 20 `i 145  ]
-{
+[; ;main.c: 82:     dozen = ((var1 * 100 / 51) - (unit*100))/10;
+[e = _dozen -> / - / * -> _var1 `i -> 100 `i -> 51 `i * -> _unit `i -> 100 `i -> 10 `i `uc ]
 "83
-[; ;main.c: 83:          c = 0;
-[e = _c -> -> 0 `i `uc ]
+[; ;main.c: 83:     dozen_1 = ((var1 * 100 / 51) - (unit*100) - (dozen*10));
+[e = _dozen_1 -> - - / * -> _var1 `i -> 100 `i -> 51 `i * -> _unit `i -> 100 `i * -> _dozen `i -> 10 `i `uc ]
 "84
-[; ;main.c: 84:          TXIE = 1;
-[e = _TXIE -> -> 1 `i `b ]
+[; ;main.c: 84:     unit_1_change = var0 / 51;
+[e = _unit_1_change -> / -> _var0 `i -> 51 `i `uc ]
 "85
-[; ;main.c: 85:      }
+[; ;main.c: 85:     k0 = (((var0 * 100) / 51) - (unit_1_change*100))/10;
+[e = _k0 -> / - / * -> _var0 `i -> 100 `i -> 51 `i * -> _unit_1_change `i -> 100 `i -> 10 `i `uc ]
+"86
+[; ;main.c: 86:     k1 = (((var0 * 100) / 51) - (unit_1_change*100) - (k0*10));
+[e = _k1 -> - - / * -> _var0 `i -> 100 `i -> 51 `i * -> _unit_1_change `i -> 100 `i * -> _k0 `i -> 10 `i `uc ]
+"88
+[; ;main.c: 88:     if (PORTDbits.RD1 == 1){
+[e $ ! == -> . . _PORTDbits 0 1 `i -> 1 `i 145  ]
+{
+"89
+[; ;main.c: 89:         HUGO = 0;
+[e = _HUGO -> -> 0 `i `uc ]
+"90
+[; ;main.c: 90:         counter = 0;
+[e = _counter -> -> 0 `i `uc ]
+"91
+[; ;main.c: 91:         PORTD = 0;
+[e = _PORTD -> -> 0 `i `uc ]
+"92
+[; ;main.c: 92:         J0 = 1;
+[e = _J0 -> -> 1 `i `uc ]
+"93
+[; ;main.c: 93:         J_1 = 0;
+[e = _J_1 -> -> 0 `i `uc ]
+"94
+[; ;main.c: 94:         J_2_dontpayenough = 0;
+[e = _J_2_dontpayenough -> -> 0 `i `uc ]
+"95
+[; ;main.c: 95:     }
 }
 [e :U 145 ]
-"86
-[; ;main.c: 86:     unit = var1 / 51;
-[e = _unit -> / -> _var1 `i -> 51 `i `uc ]
-"87
-[; ;main.c: 87:     dozen = ((var1 * 100 / 51) - (unit*100))/10;
-[e = _dozen -> / - / * -> _var1 `i -> 100 `i -> 51 `i * -> _unit `i -> 100 `i -> 10 `i `uc ]
-"88
-[; ;main.c: 88:     dozen_1 = ((var1 * 100 / 51) - (unit*100) - (dozen*10));
-[e = _dozen_1 -> - - / * -> _var1 `i -> 100 `i -> 51 `i * -> _unit `i -> 100 `i * -> _dozen `i -> 10 `i `uc ]
-"89
-[; ;main.c: 89:     unit_1_change = var0 / 51;
-[e = _unit_1_change -> / -> _var0 `i -> 51 `i `uc ]
-"90
-[; ;main.c: 90:     k0 = (((var0 * 100) / 51) - (unit_1_change*100))/10;
-[e = _k0 -> / - / * -> _var0 `i -> 100 `i -> 51 `i * -> _unit_1_change `i -> 100 `i -> 10 `i `uc ]
-"91
-[; ;main.c: 91:     k1 = (((var0 * 100) / 51) - (unit_1_change*100) - (k0*10));
-[e = _k1 -> - - / * -> _var0 `i -> 100 `i -> 51 `i * -> _unit_1_change `i -> 100 `i * -> _k0 `i -> 10 `i `uc ]
-"92
-[; ;main.c: 92:     if (PORTDbits.RD1 == 1){
-[e $ ! == -> . . _PORTDbits 0 1 `i -> 1 `i 146  ]
-{
-"93
-[; ;main.c: 93:         HUGO = 0;
-[e = _HUGO -> -> 0 `i `uc ]
-"94
-[; ;main.c: 94:         counter = 0;
-[e = _counter -> -> 0 `i `uc ]
-"95
-[; ;main.c: 95:         PORTD = 0;
-[e = _PORTD -> -> 0 `i `uc ]
 "96
-[; ;main.c: 96:         J0 = 1;
-[e = _J0 -> -> 1 `i `uc ]
+[; ;main.c: 96:     if(c > 20){
+[e $ ! > -> _c `i -> 20 `i 146  ]
+{
 "97
-[; ;main.c: 97:         J_1 = 0;
-[e = _J_1 -> -> 0 `i `uc ]
+[; ;main.c: 97:          c = 0;
+[e = _c -> -> 0 `i `uc ]
 "98
-[; ;main.c: 98:         J_2_dontpayenough = 0;
-[e = _J_2_dontpayenough -> -> 0 `i `uc ]
+[; ;main.c: 98:          TXIE = 1;
+[e = _TXIE -> -> 1 `i `b ]
 "99
-[; ;main.c: 99:     }
+[; ;main.c: 99:      }
 }
 [e :U 146 ]
 "100
@@ -718,492 +718,492 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 110:     }
 }
 [e :U 148 ]
+"111
+[; ;main.c: 111:     if (TXIF == 1){
+[e $ ! == -> _TXIF `i -> 1 `i 149  ]
+{
 "112
-[; ;main.c: 112:     if(PIR1bits.RCIF == 1){
-[e $ ! == -> . . _PIR1bits 0 5 `i -> 1 `i 149  ]
+[; ;main.c: 112:          switch(FZERO){
+[e $U 151  ]
 {
 "113
-[; ;main.c: 113:         if (RCREG == 0x0D){
-[e $ ! == -> _RCREG `i -> 13 `i 150  ]
-{
-"114
-[; ;main.c: 114:         PORTB = counter;
-[e = _PORTB _counter ]
-"115
-[; ;main.c: 115:         PORTD =2;
-[e = _PORTD -> -> 2 `i `uc ]
-"116
-[; ;main.c: 116:         }
-}
-[e :U 150 ]
-"117
-[; ;main.c: 117:         if (RCREG != 0x0D){
-[e $ ! != -> _RCREG `i -> 13 `i 151  ]
-{
-"118
-[; ;main.c: 118:         temp_read = RCREG;
-[e = _temp_read _RCREG ]
-"119
-[; ;main.c: 119:             if(temp_read==48){
-[e $ ! == -> _temp_read `i -> 48 `i 152  ]
-{
-"120
-[; ;main.c: 120:                 HUGO = 0;
-[e = _HUGO -> -> 0 `i `uc ]
-"121
-[; ;main.c: 121:             }else if(temp_read==49){
-}
-[e $U 153  ]
+[; ;main.c: 113:             case 0:
 [e :U 152 ]
-[e $ ! == -> _temp_read `i -> 49 `i 154  ]
-{
-"122
-[; ;main.c: 122:                 HUGO = 1;
-[e = _HUGO -> -> 1 `i `uc ]
-"123
-[; ;main.c: 123:             }else if(temp_read==50){
-}
-[e $U 155  ]
-[e :U 154 ]
-[e $ ! == -> _temp_read `i -> 50 `i 156  ]
-{
-"124
-[; ;main.c: 124:                 HUGO = 2;
-[e = _HUGO -> -> 2 `i `uc ]
-"125
-[; ;main.c: 125:             }else if(temp_read==51){
-}
-[e $U 157  ]
-[e :U 156 ]
-[e $ ! == -> _temp_read `i -> 51 `i 158  ]
-{
-"126
-[; ;main.c: 126:                 HUGO = 3;
-[e = _HUGO -> -> 3 `i `uc ]
-"127
-[; ;main.c: 127:             }else if(temp_read==52){
-}
-[e $U 159  ]
-[e :U 158 ]
-[e $ ! == -> _temp_read `i -> 52 `i 160  ]
-{
-"128
-[; ;main.c: 128:                 HUGO = 4;
-[e = _HUGO -> -> 4 `i `uc ]
-"129
-[; ;main.c: 129:             }else if(temp_read==53){
-}
-[e $U 161  ]
-[e :U 160 ]
-[e $ ! == -> _temp_read `i -> 53 `i 162  ]
-{
-"130
-[; ;main.c: 130:                 HUGO = 5;
-[e = _HUGO -> -> 5 `i `uc ]
-"131
-[; ;main.c: 131:             }else if(temp_read==54){
-}
-[e $U 163  ]
-[e :U 162 ]
-[e $ ! == -> _temp_read `i -> 54 `i 164  ]
-{
-"132
-[; ;main.c: 132:                 HUGO = 6;
-[e = _HUGO -> -> 6 `i `uc ]
-"133
-[; ;main.c: 133:             }else if(temp_read==55){
-}
-[e $U 165  ]
-[e :U 164 ]
-[e $ ! == -> _temp_read `i -> 55 `i 166  ]
-{
-"134
-[; ;main.c: 134:                 HUGO = 7;
-[e = _HUGO -> -> 7 `i `uc ]
-"135
-[; ;main.c: 135:             }else if(temp_read==56){
-}
-[e $U 167  ]
-[e :U 166 ]
-[e $ ! == -> _temp_read `i -> 56 `i 168  ]
-{
-"136
-[; ;main.c: 136:                 HUGO = 8;
-[e = _HUGO -> -> 8 `i `uc ]
-"137
-[; ;main.c: 137:             }else if(temp_read==57){
-}
-[e $U 169  ]
-[e :U 168 ]
-[e $ ! == -> _temp_read `i -> 57 `i 170  ]
-{
-"138
-[; ;main.c: 138:                 HUGO = 9;
-[e = _HUGO -> -> 9 `i `uc ]
-"139
-[; ;main.c: 139:             }
-}
-[e :U 170 ]
-[e :U 169 ]
-[e :U 167 ]
-[e :U 165 ]
-[e :U 163 ]
-[e :U 161 ]
-[e :U 159 ]
-[e :U 157 ]
-[e :U 155 ]
+"114
+[; ;main.c: 114:                 TXREG = unit + 48;
+[e = _TXREG -> + -> _unit `i -> 48 `i `uc ]
+"115
+[; ;main.c: 115:                 FZERO = 1;
+[e = _FZERO -> -> 1 `i `c ]
+"116
+[; ;main.c: 116:                 break;
+[e $U 150  ]
+"117
+[; ;main.c: 117:             case 1:
 [e :U 153 ]
+"118
+[; ;main.c: 118:                 TXREG = 0b101110;
+[e = _TXREG -> -> 46 `i `uc ]
+"119
+[; ;main.c: 119:                 FZERO = 2;
+[e = _FZERO -> -> 2 `i `c ]
+"120
+[; ;main.c: 120:                 break;
+[e $U 150  ]
+"121
+[; ;main.c: 121:             case 2:
+[e :U 154 ]
+"122
+[; ;main.c: 122:                 TXREG = dozen + 48;
+[e = _TXREG -> + -> _dozen `i -> 48 `i `uc ]
+"123
+[; ;main.c: 123:                 FZERO = 3;
+[e = _FZERO -> -> 3 `i `c ]
+"124
+[; ;main.c: 124:                 break;
+[e $U 150  ]
+"125
+[; ;main.c: 125:             case 3:
+[e :U 155 ]
+"126
+[; ;main.c: 126:                 TXREG = dozen_1 + 48;
+[e = _TXREG -> + -> _dozen_1 `i -> 48 `i `uc ]
+"127
+[; ;main.c: 127:                 FZERO = 4;
+[e = _FZERO -> -> 4 `i `c ]
+"128
+[; ;main.c: 128:                 break;
+[e $U 150  ]
+"129
+[; ;main.c: 129:             case 4:
+[e :U 156 ]
+"130
+[; ;main.c: 130:                 TXREG = 0b101101;
+[e = _TXREG -> -> 45 `i `uc ]
+"131
+[; ;main.c: 131:                 FZERO = 5;
+[e = _FZERO -> -> 5 `i `c ]
+"132
+[; ;main.c: 132:                 break;
+[e $U 150  ]
+"133
+[; ;main.c: 133:             case 5:
+[e :U 157 ]
+"134
+[; ;main.c: 134:                 TXREG = unit_1_change + 48;
+[e = _TXREG -> + -> _unit_1_change `i -> 48 `i `uc ]
+"135
+[; ;main.c: 135:                 FZERO = 6;
+[e = _FZERO -> -> 6 `i `c ]
+"136
+[; ;main.c: 136:                 break;
+[e $U 150  ]
+"137
+[; ;main.c: 137:             case 6:
+[e :U 158 ]
+"138
+[; ;main.c: 138:                 TXREG = 0b101110;
+[e = _TXREG -> -> 46 `i `uc ]
+"139
+[; ;main.c: 139:                 FZERO = 7;
+[e = _FZERO -> -> 7 `i `c ]
 "140
-[; ;main.c: 140:         if (J0 == 1){
-[e $ ! == -> _J0 `i -> 1 `i 171  ]
-{
+[; ;main.c: 140:                 break;
+[e $U 150  ]
 "141
-[; ;main.c: 141:             counter = HUGO;
-[e = _counter _HUGO ]
+[; ;main.c: 141:             case 7:
+[e :U 159 ]
 "142
-[; ;main.c: 142:             unidad = HUGO;
-[e = _unidad _HUGO ]
+[; ;main.c: 142:                 TXREG = k0 + 48;
+[e = _TXREG -> + -> _k0 `i -> 48 `i `uc ]
 "143
-[; ;main.c: 143:             J0 = 0;
-[e = _J0 -> -> 0 `i `uc ]
+[; ;main.c: 143:                 FZERO = 8;
+[e = _FZERO -> -> 8 `i `c ]
 "144
-[; ;main.c: 144:             J_1 = 1;
-[e = _J_1 -> -> 1 `i `uc ]
+[; ;main.c: 144:                 break;
+[e $U 150  ]
 "145
-[; ;main.c: 145:         }
-}
-[e $U 172  ]
+[; ;main.c: 145:             case 8:
+[e :U 160 ]
 "146
-[; ;main.c: 146:         else if (J_1 == 1){
-[e :U 171 ]
-[e $ ! == -> _J_1 `i -> 1 `i 173  ]
-{
+[; ;main.c: 146:                 TXREG = k1 + 48;
+[e = _TXREG -> + -> _k1 `i -> 48 `i `uc ]
 "147
-[; ;main.c: 147:             counter = (unidad*10)+HUGO;
-[e = _counter -> + * -> _unidad `i -> 10 `i -> _HUGO `i `uc ]
+[; ;main.c: 147:                 FZERO = 9;
+[e = _FZERO -> -> 9 `i `c ]
 "148
-[; ;main.c: 148:             decathlon = HUGO;
-[e = _decathlon _HUGO ]
+[; ;main.c: 148:                 break;
+[e $U 150  ]
 "149
-[; ;main.c: 149:             J_1 = 0;
-[e = _J_1 -> -> 0 `i `uc ]
+[; ;main.c: 149:             case 9:
+[e :U 161 ]
 "150
-[; ;main.c: 150:             J_2_dontpayenough = 1;
-[e = _J_2_dontpayenough -> -> 1 `i `uc ]
+[; ;main.c: 150:                 TXREG = 0b1101;
+[e = _TXREG -> -> 13 `i `uc ]
 "151
-[; ;main.c: 151:         }
-}
-[e $U 174  ]
+[; ;main.c: 151:                 FZERO = 0;
+[e = _FZERO -> -> 0 `i `c ]
 "152
-[; ;main.c: 152:         else if (J_2_dontpayenough == 1){
-[e :U 173 ]
-[e $ ! == -> _J_2_dontpayenough `i -> 1 `i 175  ]
-{
+[; ;main.c: 152:                 break;
+[e $U 150  ]
 "153
-[; ;main.c: 153:             counter = (unidad*100)+(decathlon*10)+HUGO;
-[e = _counter -> + + * -> _unidad `i -> 100 `i * -> _decathlon `i -> 10 `i -> _HUGO `i `uc ]
-"154
-[; ;main.c: 154:             J_1 = 0;
-[e = _J_1 -> -> 0 `i `uc ]
-"155
-[; ;main.c: 155:             J_2_dontpayenough = 1;
-[e = _J_2_dontpayenough -> -> 1 `i `uc ]
-"156
-[; ;main.c: 156:         }
+[; ;main.c: 153:         }
 }
-[e :U 175 ]
-[e :U 174 ]
-[e :U 172 ]
-"157
-[; ;main.c: 157:         }}
-}
+[e $U 150  ]
 [e :U 151 ]
+[e [\ -> _FZERO `i , $ -> 0 `i 152
+ , $ -> 1 `i 153
+ , $ -> 2 `i 154
+ , $ -> 3 `i 155
+ , $ -> 4 `i 156
+ , $ -> 5 `i 157
+ , $ -> 6 `i 158
+ , $ -> 7 `i 159
+ , $ -> 8 `i 160
+ , $ -> 9 `i 161
+ 150 ]
+[e :U 150 ]
+"154
+[; ;main.c: 154:     TXIF = 0;
+[e = _TXIF -> -> 0 `i `b ]
+"155
+[; ;main.c: 155:     }
 }
 [e :U 149 ]
+"156
+[; ;main.c: 156:     if(PIR1bits.RCIF == 1){
+[e $ ! == -> . . _PIR1bits 0 5 `i -> 1 `i 162  ]
+{
+"157
+[; ;main.c: 157:         if (RCREG == 0x0D){
+[e $ ! == -> _RCREG `i -> 13 `i 163  ]
+{
+"158
+[; ;main.c: 158:         PORTB = counter;
+[e = _PORTB _counter ]
 "159
-[; ;main.c: 159:     if (TXIF == 1){
-[e $ ! == -> _TXIF `i -> 1 `i 176  ]
-{
+[; ;main.c: 159:         PORTD =2;
+[e = _PORTD -> -> 2 `i `uc ]
 "160
-[; ;main.c: 160:          switch(FZERO){
-[e $U 178  ]
-{
+[; ;main.c: 160:         }
+}
+[e :U 163 ]
 "161
-[; ;main.c: 161:             case 0:
-[e :U 179 ]
+[; ;main.c: 161:         if (RCREG != 0x0D){
+[e $ ! != -> _RCREG `i -> 13 `i 164  ]
+{
 "162
-[; ;main.c: 162:                 TXREG = unit + 48;
-[e = _TXREG -> + -> _unit `i -> 48 `i `uc ]
+[; ;main.c: 162:         temp_read = RCREG;
+[e = _temp_read _RCREG ]
 "163
-[; ;main.c: 163:                 FZERO = 1;
-[e = _FZERO -> -> 1 `i `c ]
+[; ;main.c: 163:             if(temp_read==48){
+[e $ ! == -> _temp_read `i -> 48 `i 165  ]
+{
 "164
-[; ;main.c: 164:                 break;
-[e $U 177  ]
+[; ;main.c: 164:                 HUGO = 0;
+[e = _HUGO -> -> 0 `i `uc ]
 "165
-[; ;main.c: 165:             case 1:
-[e :U 180 ]
+[; ;main.c: 165:             }else if(temp_read==49){
+}
+[e $U 166  ]
+[e :U 165 ]
+[e $ ! == -> _temp_read `i -> 49 `i 167  ]
+{
 "166
-[; ;main.c: 166:                 TXREG = 0b101110;
-[e = _TXREG -> -> 46 `i `uc ]
+[; ;main.c: 166:                 HUGO = 1;
+[e = _HUGO -> -> 1 `i `uc ]
 "167
-[; ;main.c: 167:                 FZERO = 2;
-[e = _FZERO -> -> 2 `i `c ]
+[; ;main.c: 167:             }else if(temp_read==50){
+}
+[e $U 168  ]
+[e :U 167 ]
+[e $ ! == -> _temp_read `i -> 50 `i 169  ]
+{
 "168
-[; ;main.c: 168:                 break;
-[e $U 177  ]
+[; ;main.c: 168:                 HUGO = 2;
+[e = _HUGO -> -> 2 `i `uc ]
 "169
-[; ;main.c: 169:             case 2:
-[e :U 181 ]
+[; ;main.c: 169:             }else if(temp_read==51){
+}
+[e $U 170  ]
+[e :U 169 ]
+[e $ ! == -> _temp_read `i -> 51 `i 171  ]
+{
 "170
-[; ;main.c: 170:                 TXREG = dozen + 48;
-[e = _TXREG -> + -> _dozen `i -> 48 `i `uc ]
+[; ;main.c: 170:                 HUGO = 3;
+[e = _HUGO -> -> 3 `i `uc ]
 "171
-[; ;main.c: 171:                 FZERO = 3;
-[e = _FZERO -> -> 3 `i `c ]
+[; ;main.c: 171:             }else if(temp_read==52){
+}
+[e $U 172  ]
+[e :U 171 ]
+[e $ ! == -> _temp_read `i -> 52 `i 173  ]
+{
 "172
-[; ;main.c: 172:                 break;
-[e $U 177  ]
+[; ;main.c: 172:                 HUGO = 4;
+[e = _HUGO -> -> 4 `i `uc ]
 "173
-[; ;main.c: 173:             case 3:
-[e :U 182 ]
+[; ;main.c: 173:             }else if(temp_read==53){
+}
+[e $U 174  ]
+[e :U 173 ]
+[e $ ! == -> _temp_read `i -> 53 `i 175  ]
+{
 "174
-[; ;main.c: 174:                 TXREG = dozen_1 + 48;
-[e = _TXREG -> + -> _dozen_1 `i -> 48 `i `uc ]
+[; ;main.c: 174:                 HUGO = 5;
+[e = _HUGO -> -> 5 `i `uc ]
 "175
-[; ;main.c: 175:                 FZERO = 4;
-[e = _FZERO -> -> 4 `i `c ]
+[; ;main.c: 175:             }else if(temp_read==54){
+}
+[e $U 176  ]
+[e :U 175 ]
+[e $ ! == -> _temp_read `i -> 54 `i 177  ]
+{
 "176
-[; ;main.c: 176:                 break;
-[e $U 177  ]
+[; ;main.c: 176:                 HUGO = 6;
+[e = _HUGO -> -> 6 `i `uc ]
 "177
-[; ;main.c: 177:             case 4:
-[e :U 183 ]
-"178
-[; ;main.c: 178:                 TXREG = 0b101101;
-[e = _TXREG -> -> 45 `i `uc ]
-"179
-[; ;main.c: 179:                 FZERO = 5;
-[e = _FZERO -> -> 5 `i `c ]
-"180
-[; ;main.c: 180:                 break;
-[e $U 177  ]
-"181
-[; ;main.c: 181:             case 5:
-[e :U 184 ]
-"182
-[; ;main.c: 182:                 TXREG = unit_1_change + 48;
-[e = _TXREG -> + -> _unit_1_change `i -> 48 `i `uc ]
-"183
-[; ;main.c: 183:                 FZERO = 6;
-[e = _FZERO -> -> 6 `i `c ]
-"184
-[; ;main.c: 184:                 break;
-[e $U 177  ]
-"185
-[; ;main.c: 185:             case 6:
-[e :U 185 ]
-"186
-[; ;main.c: 186:                 TXREG = 0b101110;
-[e = _TXREG -> -> 46 `i `uc ]
-"187
-[; ;main.c: 187:                 FZERO = 7;
-[e = _FZERO -> -> 7 `i `c ]
-"188
-[; ;main.c: 188:                 break;
-[e $U 177  ]
-"189
-[; ;main.c: 189:             case 7:
-[e :U 186 ]
-"190
-[; ;main.c: 190:                 TXREG = k0 + 48;
-[e = _TXREG -> + -> _k0 `i -> 48 `i `uc ]
-"191
-[; ;main.c: 191:                 FZERO = 8;
-[e = _FZERO -> -> 8 `i `c ]
-"192
-[; ;main.c: 192:                 break;
-[e $U 177  ]
-"193
-[; ;main.c: 193:             case 8:
-[e :U 187 ]
-"194
-[; ;main.c: 194:                 TXREG = k1 + 48;
-[e = _TXREG -> + -> _k1 `i -> 48 `i `uc ]
-"195
-[; ;main.c: 195:                 FZERO = 9;
-[e = _FZERO -> -> 9 `i `c ]
-"196
-[; ;main.c: 196:                 break;
-[e $U 177  ]
-"197
-[; ;main.c: 197:             case 9:
-[e :U 188 ]
-"198
-[; ;main.c: 198:                 TXREG = 0b1101;
-[e = _TXREG -> -> 13 `i `uc ]
-"199
-[; ;main.c: 199:                 FZERO = 0;
-[e = _FZERO -> -> 0 `i `c ]
-"200
-[; ;main.c: 200:                 break;
-[e $U 177  ]
-"201
-[; ;main.c: 201:         }
+[; ;main.c: 177:             }else if(temp_read==55){
 }
-[e $U 177  ]
-[e :U 178 ]
-[e [\ -> _FZERO `i , $ -> 0 `i 179
- , $ -> 1 `i 180
- , $ -> 2 `i 181
- , $ -> 3 `i 182
- , $ -> 4 `i 183
- , $ -> 5 `i 184
- , $ -> 6 `i 185
- , $ -> 7 `i 186
- , $ -> 8 `i 187
- , $ -> 9 `i 188
- 177 ]
+[e $U 178  ]
 [e :U 177 ]
-"202
-[; ;main.c: 202:     TXIF = 0;
-[e = _TXIF -> -> 0 `i `b ]
-"203
-[; ;main.c: 203:     }
+[e $ ! == -> _temp_read `i -> 55 `i 179  ]
+{
+"178
+[; ;main.c: 178:                 HUGO = 7;
+[e = _HUGO -> -> 7 `i `uc ]
+"179
+[; ;main.c: 179:             }else if(temp_read==56){
 }
+[e $U 180  ]
+[e :U 179 ]
+[e $ ! == -> _temp_read `i -> 56 `i 181  ]
+{
+"180
+[; ;main.c: 180:                 HUGO = 8;
+[e = _HUGO -> -> 8 `i `uc ]
+"181
+[; ;main.c: 181:             }else if(temp_read==57){
+}
+[e $U 182  ]
+[e :U 181 ]
+[e $ ! == -> _temp_read `i -> 57 `i 183  ]
+{
+"182
+[; ;main.c: 182:                 HUGO = 9;
+[e = _HUGO -> -> 9 `i `uc ]
+"183
+[; ;main.c: 183:             }
+}
+[e :U 183 ]
+[e :U 182 ]
+[e :U 180 ]
+[e :U 178 ]
 [e :U 176 ]
-"204
-[; ;main.c: 204: }
+[e :U 174 ]
+[e :U 172 ]
+[e :U 170 ]
+[e :U 168 ]
+[e :U 166 ]
+"184
+[; ;main.c: 184:         if (J0 == 1){
+[e $ ! == -> _J0 `i -> 1 `i 184  ]
+{
+"185
+[; ;main.c: 185:             counter = HUGO;
+[e = _counter _HUGO ]
+"186
+[; ;main.c: 186:             unidad = HUGO;
+[e = _unidad _HUGO ]
+"187
+[; ;main.c: 187:             J0 = 0;
+[e = _J0 -> -> 0 `i `uc ]
+"188
+[; ;main.c: 188:             J_1 = 1;
+[e = _J_1 -> -> 1 `i `uc ]
+"189
+[; ;main.c: 189:         }
+}
+[e $U 185  ]
+"190
+[; ;main.c: 190:         else if (J_1 == 1){
+[e :U 184 ]
+[e $ ! == -> _J_1 `i -> 1 `i 186  ]
+{
+"191
+[; ;main.c: 191:             counter = (unidad*10)+HUGO;
+[e = _counter -> + * -> _unidad `i -> 10 `i -> _HUGO `i `uc ]
+"192
+[; ;main.c: 192:             decathlon = HUGO;
+[e = _decathlon _HUGO ]
+"193
+[; ;main.c: 193:             J_1 = 0;
+[e = _J_1 -> -> 0 `i `uc ]
+"194
+[; ;main.c: 194:             J_2_dontpayenough = 1;
+[e = _J_2_dontpayenough -> -> 1 `i `uc ]
+"195
+[; ;main.c: 195:         }
+}
+[e $U 187  ]
+"196
+[; ;main.c: 196:         else if (J_2_dontpayenough == 1){
+[e :U 186 ]
+[e $ ! == -> _J_2_dontpayenough `i -> 1 `i 188  ]
+{
+"197
+[; ;main.c: 197:             counter = (unidad*100)+(decathlon*10)+HUGO;
+[e = _counter -> + + * -> _unidad `i -> 100 `i * -> _decathlon `i -> 10 `i -> _HUGO `i `uc ]
+"198
+[; ;main.c: 198:             J_1 = 0;
+[e = _J_1 -> -> 0 `i `uc ]
+"199
+[; ;main.c: 199:             J_2_dontpayenough = 1;
+[e = _J_2_dontpayenough -> -> 1 `i `uc ]
+"200
+[; ;main.c: 200:         }
+}
+[e :U 188 ]
+[e :U 187 ]
+[e :U 185 ]
+"201
+[; ;main.c: 201:         }}
+}
+[e :U 164 ]
+}
+[e :U 162 ]
+"202
+[; ;main.c: 202: }
 [e :UE 147 ]
 }
-"206
-[; ;main.c: 206: void initCONFIG(void){
+"204
+[; ;main.c: 204: void initCONFIG(void){
 [v _initCONFIG `(v ~T0 @X0 1 ef ]
 {
 [e :U _initCONFIG ]
 [f ]
-"207
-[; ;main.c: 207:     OSCCONbits.IRCF2 = 1;
+"205
+[; ;main.c: 205:     OSCCONbits.IRCF2 = 1;
 [e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
-"208
-[; ;main.c: 208:     OSCCONbits.IRCF1 = 1;
+"206
+[; ;main.c: 206:     OSCCONbits.IRCF1 = 1;
 [e = . . _OSCCONbits 1 2 -> -> 1 `i `uc ]
-"209
-[; ;main.c: 209:     OSCCONbits.IRCF0 = 1;
+"207
+[; ;main.c: 207:     OSCCONbits.IRCF0 = 1;
 [e = . . _OSCCONbits 1 1 -> -> 1 `i `uc ]
-"210
-[; ;main.c: 210:     OSCCONbits.SCS = 1;
+"208
+[; ;main.c: 208:     OSCCONbits.SCS = 1;
 [e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
-"211
-[; ;main.c: 211:     ANSELH = 0;
+"209
+[; ;main.c: 209:     ANSELH = 0;
 [e = _ANSELH -> -> 0 `i `uc ]
-"212
-[; ;main.c: 212:     ANSEL = 0b00000000;
+"210
+[; ;main.c: 210:     ANSEL = 0b00000000;
 [e = _ANSEL -> -> 0 `i `uc ]
-"213
-[; ;main.c: 213:     TRISA = 0b00000000;
+"211
+[; ;main.c: 211:     TRISA = 0b00000000;
 [e = _TRISA -> -> 0 `i `uc ]
-"214
-[; ;main.c: 214:     TRISB = 0b00000000;
+"212
+[; ;main.c: 212:     TRISB = 0b00000000;
 [e = _TRISB -> -> 0 `i `uc ]
-"215
-[; ;main.c: 215:     TRISC = 0b10010000;
+"213
+[; ;main.c: 213:     TRISC = 0b10010000;
 [e = _TRISC -> -> 144 `i `uc ]
-"216
-[; ;main.c: 216:     TRISD = 0;
+"214
+[; ;main.c: 214:     TRISD = 0;
 [e = _TRISD -> -> 0 `i `uc ]
-"217
-[; ;main.c: 217:     TRISE = 0;
+"215
+[; ;main.c: 215:     TRISE = 0;
 [e = _TRISE -> -> 0 `i `uc ]
-"218
-[; ;main.c: 218:     PORTA = 0;
+"216
+[; ;main.c: 216:     PORTA = 0;
 [e = _PORTA -> -> 0 `i `uc ]
-"219
-[; ;main.c: 219:     PORTB = 0;
+"217
+[; ;main.c: 217:     PORTB = 0;
 [e = _PORTB -> -> 0 `i `uc ]
-"220
-[; ;main.c: 220:     PORTC = 0;
+"218
+[; ;main.c: 218:     PORTC = 0;
 [e = _PORTC -> -> 0 `i `uc ]
-"221
-[; ;main.c: 221:     PORTD = 0;
+"219
+[; ;main.c: 219:     PORTD = 0;
 [e = _PORTD -> -> 0 `i `uc ]
-"222
-[; ;main.c: 222:     PORTE = 0;
+"220
+[; ;main.c: 220:     PORTE = 0;
 [e = _PORTE -> -> 0 `i `uc ]
-"223
-[; ;main.c: 223:     INTCONbits.GIE = 1;
+"221
+[; ;main.c: 221:     INTCONbits.GIE = 1;
 [e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-"224
-[; ;main.c: 224:     INTCONbits.T0IE = 1;
+"222
+[; ;main.c: 222:     INTCONbits.T0IE = 1;
 [e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
-"225
-[; ;main.c: 225:     INTCONbits.T0IF = 0;
+"223
+[; ;main.c: 223:     INTCONbits.T0IF = 0;
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-"226
-[; ;main.c: 226:     TXSTAbits.SYNC = 0;
+"224
+[; ;main.c: 224:     TXSTAbits.SYNC = 0;
 [e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
-"227
-[; ;main.c: 227:     TXSTAbits.BRGH = 1;
+"225
+[; ;main.c: 225:     TXSTAbits.BRGH = 1;
 [e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
-"228
-[; ;main.c: 228:     BAUDCTLbits.BRG16 = 1;
+"226
+[; ;main.c: 226:     BAUDCTLbits.BRG16 = 1;
 [e = . . _BAUDCTLbits 0 3 -> -> 1 `i `uc ]
-"229
-[; ;main.c: 229:     SPBRG = 207;
+"227
+[; ;main.c: 227:     SPBRG = 207;
 [e = _SPBRG -> -> 207 `i `uc ]
-"230
-[; ;main.c: 230:     SPBRGH = 0;
+"228
+[; ;main.c: 228:     SPBRGH = 0;
 [e = _SPBRGH -> -> 0 `i `uc ]
-"231
-[; ;main.c: 231:     RCSTAbits.SPEN = 1;
+"229
+[; ;main.c: 229:     RCSTAbits.SPEN = 1;
 [e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
-"232
-[; ;main.c: 232:     RCSTAbits.RX9 = 0;
+"230
+[; ;main.c: 230:     RCSTAbits.RX9 = 0;
 [e = . . _RCSTAbits 0 6 -> -> 0 `i `uc ]
-"233
-[; ;main.c: 233:     RCSTAbits.CREN = 1;
+"231
+[; ;main.c: 231:     RCSTAbits.CREN = 1;
 [e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
-"234
-[; ;main.c: 234:     TXSTAbits.TXEN = 1;
+"232
+[; ;main.c: 232:     TXSTAbits.TXEN = 1;
 [e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
-"235
-[; ;main.c: 235:     TRISA0 = 0;
+"233
+[; ;main.c: 233:     TRISA0 = 0;
 [e = _TRISA0 -> -> 0 `i `b ]
-"236
-[; ;main.c: 236:     PORTAbits.RA0 = 1;
+"234
+[; ;main.c: 234:     PORTAbits.RA0 = 1;
 [e = . . _PORTAbits 0 0 -> -> 1 `i `uc ]
-"237
-[; ;main.c: 237:     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
+"235
+[; ;main.c: 235:     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
 [e ( _spiInit (4 , , , . `E1292 0 . `E1300 0 . `E1304 1 . `E1308 0 ]
-"238
-[; ;main.c: 238: }
+"236
+[; ;main.c: 236: }
 [e :UE 189 ]
 }
-"239
-[; ;main.c: 239: void initTMR0(){
+"237
+[; ;main.c: 237: void initTMR0(){
 [v _initTMR0 `(v ~T0 @X0 1 ef ]
 {
 [e :U _initTMR0 ]
 [f ]
-"240
-[; ;main.c: 240:     OPTION_REGbits.T0CS = 0;
+"238
+[; ;main.c: 238:     OPTION_REGbits.T0CS = 0;
 [e = . . _OPTION_REGbits 0 3 -> -> 0 `i `uc ]
-"241
-[; ;main.c: 241:     OPTION_REGbits.PSA = 0;
+"239
+[; ;main.c: 239:     OPTION_REGbits.PSA = 0;
 [e = . . _OPTION_REGbits 0 1 -> -> 0 `i `uc ]
-"242
-[; ;main.c: 242:     OPTION_REGbits.PS2 = 1;
+"240
+[; ;main.c: 240:     OPTION_REGbits.PS2 = 1;
 [e = . . _OPTION_REGbits 1 2 -> -> 1 `i `uc ]
-"243
-[; ;main.c: 243:     OPTION_REGbits.PS1 = 1;
+"241
+[; ;main.c: 241:     OPTION_REGbits.PS1 = 1;
 [e = . . _OPTION_REGbits 1 1 -> -> 1 `i `uc ]
-"244
-[; ;main.c: 244:     OPTION_REGbits.PS0 = 1;
+"242
+[; ;main.c: 242:     OPTION_REGbits.PS0 = 1;
 [e = . . _OPTION_REGbits 1 0 -> -> 1 `i `uc ]
-"245
-[; ;main.c: 245:     TMR0 = 217;
+"243
+[; ;main.c: 243:     TMR0 = 217;
 [e = _TMR0 -> -> 217 `i `uc ]
-"246
-[; ;main.c: 246: }
+"244
+[; ;main.c: 244: }
 [e :UE 190 ]
 }

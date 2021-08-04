@@ -78,17 +78,13 @@ void main(void) {
        __delay_ms(1);
        PORTAbits.RA0 = 1;          
        __delay_ms(250);
-       
-    if(c > 20){ 
-         c = 0;
-         TXIE = 1; 
-     }
     unit = var1 / 51;
     dozen = ((var1 * 100 / 51) - (unit*100))/10;
     dozen_1 = ((var1 * 100 / 51) - (unit*100) - (dozen*10));  
     unit_1_change = var0 / 51;
     k0 = (((var0 * 100) / 51) - (unit_1_change*100))/10;
-    k1 = (((var0 * 100) / 51) - (unit_1_change*100) - (k0*10));
+    k1 = (((var0 * 100) / 51) - (unit_1_change*100) - (k0*10));   
+    
     if (PORTDbits.RD1 == 1){
         HUGO = 0;
         counter = 0;
@@ -97,6 +93,10 @@ void main(void) {
         J_1 = 0;
         J_2_dontpayenough = 0;
     }
+    if(c > 20){ 
+         c = 0;
+         TXIE = 1; 
+     }
     }
     return;
 }
@@ -108,7 +108,51 @@ void __interrupt() isr(void){
         c++;
         INTCONbits.T0IF = 0;      
     }
-        
+    if (TXIF == 1){
+         switch(FZERO){
+            case 0:
+                TXREG = unit + 48;  // 48 MEANS ASCII FOR ZERO.
+                FZERO = 1;
+                break;
+            case 1:
+                TXREG = 0b101110;
+                FZERO = 2;
+                break;
+            case 2:
+                TXREG = dozen + 48; 
+                FZERO = 3;
+                break;
+            case 3:
+                TXREG = dozen_1 + 48; 
+                FZERO = 4;
+                break;
+            case 4:
+                TXREG = 0b101101;
+                FZERO = 5;
+                break;
+            case 5:
+                TXREG = unit_1_change + 48;
+                FZERO = 6;    
+                break;
+            case 6:
+                TXREG = 0b101110;
+                FZERO = 7;
+                break;
+            case 7:
+                TXREG = k0 + 48;
+                FZERO = 8;
+                break;
+            case 8:
+                TXREG = k1 + 48;
+                FZERO = 9;
+                break;
+            case 9:
+                TXREG = 0b1101;
+                FZERO = 0;    
+                break;
+        }       
+    TXIF = 0;
+    }   
     if(PIR1bits.RCIF == 1){ 
         if (RCREG ==  0x0D){
         PORTB = counter; 
@@ -155,52 +199,6 @@ void __interrupt() isr(void){
             J_2_dontpayenough = 1;
         }     
         }}
-    
-    if (TXIF == 1){
-         switch(FZERO){
-            case 0:
-                TXREG = unit + 48;  // 48 MEANS ASCII FOR ZERO.
-                FZERO = 1;
-                break;
-            case 1:
-                TXREG = 0b101110;
-                FZERO = 2;
-                break;
-            case 2:
-                TXREG = dozen + 48; 
-                FZERO = 3;
-                break;
-            case 3:
-                TXREG = dozen_1 + 48; 
-                FZERO = 4;
-                break;
-            case 4:
-                TXREG = 0b101101;
-                FZERO = 5;
-                break;
-            case 5:
-                TXREG = unit_1_change + 48;
-                FZERO = 6;    
-                break;
-            case 6:
-                TXREG = 0b101110;
-                FZERO = 7;
-                break;
-            case 7:
-                TXREG = k0 + 48;
-                FZERO = 8;
-                break;
-            case 8:
-                TXREG = k1 + 48;
-                FZERO = 9;
-                break;
-            case 9:
-                TXREG = 0b1101;
-                FZERO = 0;    
-                break;
-        }       
-    TXIF = 0;
-    }   
 }
 
 void initCONFIG(void){
