@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Aug  5 00:00:03 2021
-
 @author: Fernando Sandoval
 """
 import serial
