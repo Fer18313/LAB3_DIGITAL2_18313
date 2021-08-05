@@ -10,8 +10,9 @@ from serial import Serial
 from tkinter.font import Font
 import time
 import sys
+
 #ONLY UNCOMMENT WHEN YOU ARE GOING TO TRANSFER ITEMS
-#ser = serial.Serial('COM5',baudrate=9600,timeout=1)
+ser = serial.Serial('COM4',baudrate=9600,timeout=1)
 class Window(Frame):
     def __init__(self, master=None):
         Frame.__init__(self, master)               
@@ -29,7 +30,11 @@ class Window(Frame):
         self.name.focus()
         self.name.place(x=85, y=80)
         POT_1 = Label(self, text = 'POTENTIOMETER 1').place(x=40, y = 120)
-        POT_2 = Label(self, text = 'POTENTIOMETER 2').place(x=160, y = 120)        
+        POT_2 = Label(self, text = 'POTENTIOMETER 2').place(x=160, y = 120)
+    def connection():
+        ser.open()
+        print('Port Ready for COM4')
+        
 root = Tk()
 root.geometry("300x200")    
 app = Window(root)
