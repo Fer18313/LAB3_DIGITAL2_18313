@@ -2748,8 +2748,7 @@ void main(void) {
 void initCONFIG(void){
     ANSELH = 0;
     ANSEL = 0b00000011;
-    TRISA = 0b00001011;
-    TRISB = 0b00001000;
+    TRISA = 0b00100011;
     TRISC = 0b00011000;
     TRISD = 0;
     TRISE = 0;
@@ -2768,7 +2767,7 @@ void initCONFIG(void){
     INTCONbits.PEIE = 1;
     PIR1bits.SSPIF = 0;
     PIE1bits.SSPIE = 1;
-    TRISBbits.TRISB3 = 1;
+    TRISAbits.TRISA5 = 1;
     PIE1bits.ADIE = 1;
     PIR1bits.ADIF = 0;
     spiInit(SPI_SLAVE_SS_EN, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);

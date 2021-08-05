@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
-                                                                                               Wed Aug 04 13:58:41 2021
+                                                                                               Wed Aug 04 22:43:39 2021
 
 Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1 
      1                           	processor	16F887
@@ -560,7 +560,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    546  0019                     _TXREG	set	25
    547  000B                     _INTCONbits	set	11
    548  0008                     _PORTDbits	set	8
-   549  0005                     _PORTAbits	set	5
+   549  0007                     _PORTCbits	set	7
    550  0013                     _SSPBUF	set	19
    551  0014                     _SSPCON	set	20
    552  0008                     _PORTD	set	8
@@ -581,7 +581,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    567  0094                     _SSPSTATbits	set	148
    568  0094                     _SSPSTAT	set	148
    569  009F                     _ADCON1bits	set	159
-   570  0428                     _TRISA0	set	1064
+   570  043A                     _TRISC2	set	1082
    571  0464                     _TXIE	set	1124
    572  043B                     _TRISC3	set	1083
    573  043D                     _TRISC5	set	1085
@@ -886,10 +886,10 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    872  0037  120A  118A  247B  120A  118A  	fcall	_initTMR0
    873  003C                     l1457:
    874                           
-   875                           ;main.c: 66:        PORTAbits.RA0 = 0;
+   875                           ;main.c: 66:        PORTCbits.RC2 = 0;
    876  003C  1283               	bcf	3,5	;RP0=0, select bank0
    877  003D  1303               	bcf	3,6	;RP1=0, select bank0
-   878  003E  1005               	bcf	5,0	;volatile
+   878  003E  1107               	bcf	7,2	;volatile
    879  003F                     l1459:
    880                           
    881                           ;main.c: 67:        _delay((unsigned long)((1)*(8000000/4000.0)));
@@ -981,10 +981,10 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
    967  0082  287F               	goto	u897
    968  0083                     l1477:
    969                           
-   970                           ;main.c: 79:        PORTAbits.RA0 = 1;
+   970                           ;main.c: 79:        PORTCbits.RC2 = 1;
    971  0083  1283               	bcf	3,5	;RP0=0, select bank0
    972  0084  1303               	bcf	3,6	;RP1=0, select bank0
-   973  0085  1405               	bsf	5,0	;volatile
+   973  0085  1507               	bsf	7,2	;volatile
    974  0086                     l1479:
    975                           
    976                           ;main.c: 80:        _delay((unsigned long)((250)*(8000000/4000.0)));
@@ -1735,14 +1735,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1721  03FB  1698               	bsf	24,5	;volatile
   1722  03FC                     l1359:
   1723                           
-  1724                           ;main.c: 233:     TRISA0 = 0;
-  1725  03FC  1005               	bcf	5,0	;volatile
+  1724                           ;main.c: 233:     TRISC2 = 0;
+  1725  03FC  1107               	bcf	7,2	;volatile
   1726  03FD                     l1361:
   1727                           
-  1728                           ;main.c: 234:     PORTAbits.RA0 = 1;
+  1728                           ;main.c: 234:     PORTCbits.RC2 = 1;
   1729  03FD  1283               	bcf	3,5	;RP0=0, select bank0
   1730  03FE  1303               	bcf	3,6	;RP1=0, select bank0
-  1731  03FF  1405               	bsf	5,0	;volatile
+  1731  03FF  1507               	bsf	7,2	;volatile
   1732  0400                     l1363:
   1733                           
   1734                           ;main.c: 235:     spiInit(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LO
@@ -3153,7 +3153,7 @@ EEDATA             100      0       0       0        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.32 build 20210201212658 
-Symbol Table                                                                                   Wed Aug 04 13:58:41 2021
+Symbol Table                                                                                   Wed Aug 04 22:43:39 2021
 
                       _c 0042           ___bmul@product 0022              _SSPSTATbits 0094  
                      _J0 0047                       l61 0449                       l62 044E  
@@ -3259,7 +3259,7 @@ Symbol Table                                                                    
                  i1l1497 020F                   i1l1595 0318                   i1l1587 0305  
                  i1l1579 02EF                   i1l1499 0210                   i1l1597 031B  
                  i1l1589 030A                   i1l1599 0320                   _SPBRGH 009A  
-                 _TRISA0 0428                   _TRISC3 043B                   _TRISC5 043D  
+                 _TRISC2 043A                   _TRISC3 043B                   _TRISC5 043D  
                  _SSPCON 0014                   _SSPBUF 0013                   ___bmul 044F  
                  ___wmul 040A                ??___awdiv 002A         __end_of_initTMR0 0487  
        ___awdiv@quotient 002D                   _unidad 007D                   saved_w 007E  
@@ -3277,7 +3277,7 @@ __size_of_spiReceiveWait 0007               ??i1___bmul 0071                  _S
                 _dozen_1 003A                  _counter 0043             __size_of_isr 015E  
     i1___bmul@multiplier 0073                  _spiInit 0431                  _spiRead 0487  
    end_of_initialization 002E               ??_initTMR0 0020                _RCSTAbits 0018  
-             ??_spiWrite 0020                _PORTAbits 0005                _PORTDbits 0008  
+             ??_spiWrite 0020                _PORTCbits 0007                _PORTDbits 0008  
             spiWrite@dat 0020              ?_initCONFIG 0070                _TXSTAbits 0098  
          _spiReceiveWait 0490           __end_of___bmul 0466           __end_of___wmul 0431  
             _BAUDCTLbits 0187        __size_ofi1___bmul 0015      start_initialization 0011  
